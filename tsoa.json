@@ -1,0 +1,31 @@
+{
+  "entryFile": "src/app.ts",
+  "noImplicitAdditionalProperties": "throw-on-extras",
+  "controllerPathGlobs": ["src/controllers/**/*.ts"],
+  "spec": {
+    "outputDirectory": "build",
+    "specVersion": 3,
+    "spec": {
+      "servers": [
+        {
+          "description": "Development",
+          "url": "http://localhost:3000/v1"
+        },
+        {
+          "description": "Staging",
+          "url": "https://staging.api.com/v1"
+        },
+        {
+          "description": "Production",
+          "url": "https://api.com/v1"
+        }
+      ],
+      "info": {
+        "title": "tsoa OpenAPI Demo"
+      }
+    }
+  },
+  "routes": {
+    "routesDir": "build"
+  }
+}
