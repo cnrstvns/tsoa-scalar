@@ -1,6 +1,13 @@
 export interface Major {
-  id: number;
-  title: string;
+  /** Unique identifier for the object */
+  id: string;
+
+  /** The major's name */
+  name: string;
+
+  /** The major's description */
   description: string;
+
+  /** The college which the major belongs to */
   college: string;
 }

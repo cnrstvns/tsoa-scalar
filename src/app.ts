@@ -27,7 +27,7 @@ app.use(
 app.use(json());
 
 app.use(
-  '/docs',
+  '/reference',
   apiReference({
     spec: {
       content: spec,

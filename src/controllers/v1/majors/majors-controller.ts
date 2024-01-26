@@ -14,7 +14,7 @@ import { MajorsService, CreateMajorParams } from './majors-service';
 export class MajorsController extends Controller {
   /** @summary Retrieve a Major */
   @Get('{majorId}')
-  public async retrieve(@Path() majorId: number): Promise<Major> {
+  public async retrieve(@Path() majorId: string): Promise<Major> {
     return new MajorsService().get(majorId);
   }
 
