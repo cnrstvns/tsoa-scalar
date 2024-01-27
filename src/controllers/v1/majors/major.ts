@@ -10,4 +10,7 @@ export interface Major {
 
   /** The college which the major belongs to */
   college: string;
+
+  /** The number of students enrolled in the program */
+  studentCount: number;
 }
